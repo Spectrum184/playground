@@ -1,6 +1,7 @@
 class HashMap {
+    #hashMap
     constructor() {
-        this._map = [];
+        this.#hashMap = []
     }
 
     /**
@@ -8,7 +9,7 @@ class HashMap {
       * @var string stringKey
       * @returns hash
       */
-    hashKey(stringKey) {
+    #hashKey(stringKey) {
         let hash = 0;
 
         for (let i = 0; i < stringKey.length; i++) {
@@ -29,13 +30,13 @@ class HashMap {
       * @returns void
       */
     set(key, value) {
-        let id = this.hashKey(key);
+        let id = this.#hashKey(key);
 
-        if (!this._map[id]) {
-            this._map[id] = [];
+        if (!this.#hashMap[id]) {
+            this.#hashMap[id] = [];
         }
 
-        this._map[id].push([key, value]);
+        this.#hashMap[id].push([key, value]);
     }
 
     /**
@@ -44,13 +45,13 @@ class HashMap {
       * @returns value
       */
     get(key) {
-        let id = this.hashKey(key);
+        let id = this.#hashKey(key);
 
-        if (!this._map[id]) {
+        if (!this.#hashMap[id]) {
             return undefined;
         }
 
-        for (const keyVal of this._map[id]) {
+        for (const keyVal of this.#hashMap[id]) {
             if (keyVal[0] === key) {
                 return keyVal[1];
             }
