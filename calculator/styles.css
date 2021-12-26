@@ -1,0 +1,94 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: #bd93f9;
+}
+
+.calculator {
+  text-align: center;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.result {
+  height: 100px;
+  width: 100%;
+  background-color: #282a36;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: #f8f8f2;
+  font-size: 50px;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.result .slave {
+  height: 20px;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.result .master {
+  text-align: right;
+}
+
+.list-btn {
+  display: flex;
+  width: 100%;
+}
+
+.calculate {
+  border: 1px solid #282a36;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  overflow: hidden;
+}
+
+.list-btn {
+  border-bottom: 1px solid #282a36;
+}
+
+.list-btn:last-child {
+  border-bottom: none;
+}
+
+.list-btn .btn {
+  width: 25%;
+  height: 60px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  color: #282a36;
+  border-left: 1px solid #282a36;
+  background-color: #ff79c6;
+}
+
+.list-btn .btn:hover {
+  opacity: 0.9;
+}
+
+.list-btn .btn:first-child {
+  border-left: none;
+}
+
+.list-btn:first-child .btn {
+  background-color: #ff5555;
+}
+
+.btn.btn-operator {
+  background-color: #6272a4 !important;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Simple Calculator</h1>
+    </div>
+    <div class="calculator">
+      <div class="result">
+        <div class="slave">
+          <span id="history"></span>
+          <span id="temporary"></span>
+        </div>
+        <span class="master" id="result"></span>
+      </div>
+      <div class="calculate">
+        <div class="list-btn">
+          <button class="btn" id="btn-switch">AC</button>
+          <button class="btn" id="btn-clean">CE</button>
+          <button class="btn" id="btn-undo">C</button>
+          <button class="btn btn-operator" id="btn-operator">/</button>
+        </div>
+        <div class="list-btn">
+          <button class="btn" id="btn-number">7</button>
+          <button class="btn" id="btn-number">8</button>
+          <button class="btn" id="btn-number">9</button>
+          <button class="btn btn-operator" id="btn-operator">*</button>
+        </div>
+        <div class="list-btn">
+          <button class="btn" id="btn-number">4</button>
+          <button class="btn" id="btn-number">5</button>
+          <button class="btn" id="btn-number">6</button>
+          <button class="btn btn-operator" id="btn-operator">-</button>
+        </div>
+        <div class="list-btn">
+          <button class="btn" id="btn-number">1</button>
+          <button class="btn" id="btn-number">2</button>
+          <button class="btn" id="btn-number">3</button>
+          <button class="btn btn-operator" id="btn-operator">+</button>
+        </div>
+        <div class="list-btn">
+          <button class="btn" id="btn-number">0</button>
+          <button class="btn" id="btn-dot">.</button>
+          <button class="btn" id="btn-ans">ANS</button>
+          <button class="btn btn-operator" id="btn-equal">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

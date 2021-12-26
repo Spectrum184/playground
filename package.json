@@ -1,0 +1,30 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "just play ground",
+  "main": "map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "pre-commit":"lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spectrum184/playground.git"
+  },
+  "keywords": [
+    "js",
+    "playground",
+    "javascript"
+  ],
+  "author": "ThanhTK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spectrum184/playground/issues"
+  },
+  "homepage": "https://github.com/Spectrum184/playground#readme",
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4"
+  }
+}
