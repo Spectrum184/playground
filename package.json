@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "lint": "eslint src --fix --cache"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,14 @@
   },
   "homepage": "https://github.com/Spectrum184/playground#readme",
   "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.1.4"
+    "lint-staged": "^12.1.4",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
   }
 }
